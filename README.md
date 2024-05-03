@@ -1,4 +1,4 @@
-# @sudfish Neovim
+# [@sudfish](https://github.com/sudfish) Neovim
 
 ## Introduction
 Neovim, the @sudfish way. Requires nvim v0.8.1 or greater for the Telescope
