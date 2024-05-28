@@ -3,7 +3,8 @@
 -- File saving and quitting maps
 vim.keymap.set('n', '<leader>fs', "<Esc>:w<CR>", {desc = '[F]ile [S]ave'});
 vim.keymap.set('n', '<leader>fq', "<Esc>:q<CR>", {desc = '[F]ile [Q]uit'});
-vim.keymap.set('n', '<leader>fr', "<Esc>:!./run.sh<CR>", {desc = '[F]ile ['});
+vim.keymap.set('n', '<leader>fr', "<Esc>:!./run.sh<CR>", {desc = '[F]ile [R]un'});
+vim.keymap.set('n', '<leader>fb', "<Esc>:b#<CR>", {desc = '[F]ile [B]ack'})
 vim.keymap.set({ 'n', 'v', 'i'}, '<C-s>', '<Esc>:w<CR>', {desc = 'SAVE'});
 vim.keymap.set({'n', 'v'}, '<leader>q', "<Esc>:q<CR>", {desc = 'QUIT'});
 
@@ -18,7 +19,7 @@ vim.keymap.set('n', '<leader>/', function()
     winblend = 10,
     previewer = false,
   })
-end, { desc = '[/] Fuzzily search in current buffer' })
+end, { desc = '[/] Fuzzily search in curr buffer' })
 
 -- Other keymaps that'll go unnoticed
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true });
